@@ -16,18 +16,19 @@ body {
 div.gallery {
   align-self: center;
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   float: right;
   width: 180px;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #000;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 3%;
 }
 
 div.desc {
