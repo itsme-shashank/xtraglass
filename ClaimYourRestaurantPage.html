@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Claim Your Page | XtraGlass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #1a0633, #3c026e);
+      --accent: #ff4dbc;
+      --text-light: #e0dfee;
+      --text-medium: #b0aacf;
+      --text-dark: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .claim-container {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .claim-container h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      color: var(--text-light);
+    }
+
+    .claim-container p.desc {
+      color: var(--text-medium);
+      margin-bottom: 24px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .steps {
+      text-align: left;
+      margin: 0 auto 32px;
+      max-width: 500px;
+    }
+
+    .step {
+      margin-bottom: 20px;
+    }
+
+    .step h3 {
+      color: var(--text-dark);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .step p {
+      color: var(--text-medium);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e23aaa;
+    }
+
+    @media (max-width: 480px) {
+      .claim-container {
+        padding: 20px;
+      }
+
+      .claim-container h1 {
+        font-size: 1.6rem;
+      }
+
+      .steps { max-width: 100%; }
+
+      .btn {
+        width: 100%;
+        padding: 12px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="claim-container">
+    <h1>Claim Your Restaurant Page</h1>
+    <p class="desc">
+      Already listed on XtraGlass? Follow these simple steps to claim your page and take full control.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <h3>1. Search Your Listing</h3>
+        <p>Look up your restaurant or bar on XtraGlass and click <strong>“Claim This Page.”</strong></p>
+      </div>
+
+      <div class="step">
+        <h3>2. Verify Ownership</h3>
+        <p>Confirm your ownership via OTP or by uploading valid business documents.</p>
+      </div>
+
+      <div class="step">
+        <h3>3. Manage Your Page</h3>
+        <p>Access the XtraGlass dashboard to update info, respond to reviews, and boost visibility.</p>
+      </div>
+    </div>
+
+    <a href="https://docs.google.com/forms/d/1ffVvrxRdb14AfTiFOGuvkv6ll9d4e_u2xU0dTFMeVgM/edit" 
+       target="_blank" 
+       class="btn">Claim Your Page</a>
+  </div>
+
+</body>
+</html>
